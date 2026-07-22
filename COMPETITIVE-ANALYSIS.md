@@ -152,7 +152,7 @@ adult-curriculum / not citation-engineered / US-only. That gap is the opening.**
 made machine-checkable.** Every major free competitor is funded by a bank (BoA/KA), a payment network
 (Visa), an ad/affiliate publisher (Investopedia), or carries industry-member coalitions (Jump$tart) — and
 the credibility cost of that is documented in the literature. Even the clean ones (CFPB, GCFGlobal) don't
-combine independence with open licensing and a coherent adult curriculum. Elyos can own
+combine independence with open licensing and a coherent adult curriculum. Hee-Lee Oss can own
 "**the financial literacy you can trust *because* no one profits from your decisions** — and you can
 prove it: no sponsor, CC-BY-4.0, every claim sourced, a CI linter that fails the build on product steering."
 
@@ -249,7 +249,7 @@ trust-sensitive, jurisdiction-varying, "education-not-advice"* domain:
 - **`media-literacy-curriculum`** (spotting misinformation/scams): the scam/verification module is a
   bridge; shares the "recognize *and verify*" pedagogy and the non-fear-based framing.
 - **A standalone `sourced-education-engine` / OER toolkit** (charter + linter + provenance/staleness schema
-  + a11y/i18n pipeline) that any Elyos education project can adopt — the highest-leverage extraction.
+  + a11y/i18n pipeline) that any Hee-Lee Oss education project can adopt — the highest-leverage extraction.
 
 ---
 

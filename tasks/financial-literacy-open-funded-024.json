@@ -17,16 +17,16 @@
     "Funded lane model documented: budget cap (hard ceiling, not a guideline), payment mechanism, scope of compensated hours (sign-off review only, not content authoring), and audit trail",
     "Independence and COI rules defined: reviewer must disclose all financial affiliations; a reviewer with a financial interest in any product the curriculum could touch is ineligible; COI check is recorded per reviewer engagement",
     "Funded lane does not alter the reviewer's veto rights or sign-off authority; the expert still holds a veto on substance and may not be overridden by the maintainer",
-    "Governance decision on the funded model is recorded, including how it interfaces with Elyos's funded lane escrow and cost ledger",
+    "Governance decision on the funded model is recorded, including how it interfaces with Hee-Lee Oss's funded lane escrow and cost ledger",
     "No funded reviewer compensation creates a financial dependency that compromises the project's categorical no-affiliate/no-sponsorship rule",
-    "Document is approved by Elyos governance before the funded lane is activated"
+    "Document is approved by Hee-Lee Oss governance before the funded lane is activated"
   ],
   "resources": [
     "PLAN.md",
     "CLAUDE.md",
     "tasks/financial-literacy-open-policy-001.json"
   ],
-  "output": "A governance document (governance/funded-reviewer-lane.md) defining the funded reviewer-hours model with budget cap, COI rules, independence safeguards, and Elyos governance sign-off — prerequisite before any funded reviewer hours are authorized.",
+  "output": "A governance document (governance/funded-reviewer-lane.md) defining the funded reviewer-hours model with budget cap, COI rules, independence safeguards, and Hee-Lee Oss governance sign-off — prerequisite before any funded reviewer hours are authorized.",
   "requestor": "TO BE SECURED",
   "verifiedNeed": false,
   "outputLicense": "CC-BY-4.0",

@@ -242,12 +242,12 @@ This is a **content/OER project with lightweight, privacy-preserving static tool
 multi-tenant app. The pipeline and tools are deliberately simple so the artifact is durable,
 auditable, forkable, and cheap to host (static).
 
-**Stack.** TypeScript + ESM, pnpm workspaces (per Elyos conventions). Content authored as
+**Stack.** TypeScript + ESM, pnpm workspaces (per Hee-Lee Oss conventions). Content authored as
 **Markdown/MDX with structured YAML frontmatter** validated against a JSON Schema. A static-site
 generator (e.g., Astro or similar) renders the open site + PWA-style offline support; printables
 rendered to PDF from the same source. Interactive calculators are **client-side-only** components
 (no backend, no network calls with user data). Optional AI assistance for *authoring/drafting* runs
-through Elyos's neutral LLM client (Anthropic Claude as the reasoning resource; model selection and
+through Hee-Lee Oss's neutral LLM client (Anthropic Claude as the reasoning resource; model selection and
 pricing per the Claude API skill) — but **no learner-facing live LLM endpoint** ships at launch (a
 live "ask a question" assistant is backlog and would inherit the full guardrail layer). Code license
 **MIT**; content/data **CC-BY-4.0**.
@@ -344,7 +344,7 @@ data.** Interactive tools compute **entirely client-side**; there is **no backen
 financial inputs**, **no analytics on financial inputs**, and **no user accounts tied to financial
 profiles**. Any "save my numbers" feature is **local-device-only, opt-in, and never uploaded**. Pilot
 measurement uses **anonymous, aggregate** pre/post instruments with **no PII** and no linkage to
-individuals. No secrets/tokens/PII in logs, receipts, or committed files (Elyos rule).
+individuals. No secrets/tokens/PII in logs, receipts, or committed files (Hee-Lee Oss rule).
 
 **Attribution.** Content cites primary sources; redistribution preserves CC-BY attribution. Reviewers
 and translators are credited (with consent) in a ledger, scoped to the versions they approved.
@@ -447,7 +447,7 @@ on the secured credentialed reviewer; M5 blocks on a secured delivery partner.
 ## Work breakdown
 
 The itemized, schema-mapped backlog lives in **`TASKS.md`**: ~18 tasks across milestones M0–M6 plus a
-future backlog, each mapped to the Elyos Task JSON schema, with per-task acceptance criteria for the
+future backlog, each mapped to the Hee-Lee Oss Task JSON schema, with per-task acceptance criteria for the
 most important items, milestone Definitions of Done, and a complete example Task JSON for the first M0
 task (the editorial / product-neutrality policy charter). The first build item is the **policy charter
 + linter**, reflecting that "education-not-advice / product-neutral" is a hard product requirement; an
@@ -473,7 +473,7 @@ reviewer, and a **single-module M1 proof** validates the pipeline before the res
   the ledger only for versions they approved, with consent, and may not imply endorsement of the
   product or of content they did not review. **Disagreement fallback:** the expert holds a **veto on
   whether content is accurate/safe to publish**; a maintainer cannot override a "do not ship" on
-  substance — the content does not ship, the disagreement is logged and escalated to Elyos governance
+  substance — the content does not ship, the disagreement is logged and escalated to Hee-Lee Oss governance
   or a second reviewer.
 - **Jurisdiction expert (for any overlay): TO BE SECURED** — a local financial educator / consumer-
   finance professional for the specific country; signs off the overlay.
@@ -482,21 +482,21 @@ reviewer, and a **single-module M1 proof** validates the pipeline before the res
 - **Delivery partner / requestor: TO BE SECURED** — the library/adult-ed/community-college/nonprofit-
   counseling/CDFI/resettlement organization that puts the curriculum in front of learners.
 - **Community / board:** license edge cases (CC-BY vs. CC-BY-SA inheritance), the jurisdiction-scope
-  decision, and any move toward a live learner-facing assistant go through Elyos governance.
+  decision, and any move toward a live learner-facing assistant go through Hee-Lee Oss governance.
 
 ---
 
 ## Dependencies & integrations
 
-- **External services:** Anthropic Claude API (authoring assistance only, behind Elyos's neutral LLM
+- **External services:** Anthropic Claude API (authoring assistance only, behind Hee-Lee Oss's neutral LLM
   client; model selection/pricing per the Claude API skill); static hosting/CDN for the open site +
   printables. **No backend handling user financial data** (privacy by construction).
 - **Datasets / sources:** authoritative open consumer-finance / central-bank / nonprofit OER material,
   each with **verified reuse terms** and recorded provenance.
 - **Tooling:** pnpm/TS/ESM toolchain; a static-site generator (Astro or similar); a readability
   scorer; an accessibility audit tool; the custom product-neutrality/not-advice linter.
-- **Elyos pieces:** `packages/schema` (Task JSON), `CLAUDE.md` (work rules + refusal guardrails),
-  `docs/good-deed-definition.md` (risk tiers), Elyos governance (license/edge-case decisions),
+- **Hee-Lee Oss pieces:** `packages/schema` (Task JSON), `CLAUDE.md` (work rules + refusal guardrails),
+  `docs/good-deed-definition.md` (risk tiers), Hee-Lee Oss governance (license/edge-case decisions),
   sibling plans (`planning/projects/public-official-guide/{PLAN,TASKS}.md`) for house style.
 - **Human/decision dependencies (critical path):** the **credentialed reviewer** (blocks all M1+
   content), the **jurisdiction-scope decision** (M0; gates overlays), and a **secured delivery
@@ -542,7 +542,7 @@ model. Citation-coverage and **staleness fail-safe** prevent inaccurate/stale cl
 The non-shaming heuristics flag harmful framing for human review.
 
 **Standard hygiene.** MIT/CC-BY licensing with attribution preserved; **no secrets/tokens/PII in
-logs, receipts, or committed files** (Elyos rule); dependency + secret scanning in CI; the static
+logs, receipts, or committed files** (Hee-Lee Oss rule); dependency + secret scanning in CI; the static
 build has minimal attack surface; the authoring-only LLM usage never sends learner data (there is no
 learner data) and runs behind the neutral client. A no-endorsement notice deters MLM/funnel misuse of
 the CC-BY content.
@@ -582,7 +582,7 @@ content remains a usable, openly-licensed OER artifact in the commons.
 - **Credentialed-reviewer model** — volunteer vs. a future **funded lane** for review hours (with a
   hard budget cap) without compromising independence/commercial-disinterest? (Affects the dated plan.)
 - **CC-BY vs. CC-BY-SA inheritance** — how to segregate/label content derived from share-alike
-  sources so the overall corpus stays cleanly reusable? (Elyos governance.)
+  sources so the overall corpus stays cleanly reusable? (Hee-Lee Oss governance.)
 - **Pilot languages** — which ≥ 2 languages first (driven by the secured partner's audience —
   e.g., new-arrival/ESL communities)?
 - **Live learner-facing assistant** — keep as gated backlog only? It would require porting the full
@@ -597,11 +597,11 @@ content remains a usable, openly-licensed OER artifact in the commons.
 ## References
 
 - Proposal: `governance/proposals/financial-literacy-open.md` *(TO BE WRITTEN — no proposal exists yet)*
-- Elyos work rules & refusal guardrails: `CLAUDE.md`
+- Hee-Lee Oss work rules & refusal guardrails: `CLAUDE.md`
 - Good-deed definition & risk tiers: `docs/good-deed-definition.md`
 - Task JSON schema: `packages/schema/src/schemas.ts`
 - Portfolio entry: `planning/ROADMAP.md` (Track 3 — `financial-literacy-open`, ⚪ selected, med)
-- Sibling Elyos plan for house style (medium/high-risk, "not advice"): 
+- Sibling Hee-Lee Oss plan for house style (medium/high-risk, "not advice"): 
   `planning/projects/public-official-guide/{PLAN,TASKS}.md`
 - Exemplar plan depth/structure: `C:\code\Ofelia\plan.md`
 - Planning spec: `scratchpad/PLAN_SPEC.md`
@@ -669,14 +669,14 @@ is a concrete change to the plan, not a vague aspiration.
 ## Review sign-off
 
 **Reviewer:** plan author (senior staff engineer + TPM), self-review against `PLAN_SPEC.md`,
-`CLAUDE.md`, `docs/good-deed-definition.md`, and the Elyos Task schema.
+`CLAUDE.md`, `docs/good-deed-definition.md`, and the Hee-Lee Oss Task schema.
 
 **Completeness.** All 17 required H2 sections are present and in order. The plan states the lane
 (donated), risk tier (MEDIUM, with the line to HIGH made explicit), and an honest partner/need status
 (`TO BE SECURED`, `verifiedNeed:false`). Roadmap M0–M6 each carry a goal + measurable exit criteria;
 the work breakdown points to `TASKS.md`.
 
-**Correctness against Elyos rules.** (a) Agent-neutral core: authoring-only LLM behind the neutral
+**Correctness against Hee-Lee Oss rules.** (a) Agent-neutral core: authoring-only LLM behind the neutral
 client; no learner-facing LLM at launch; no vendor logic in content/pipeline. (b) Refusal guardrails:
 the refused-use set covers product steering, affiliate/lead-gen, investment/tax/legal advice,
 get-rich/MLM/"credit-repair," and individualized advice — with non-commercial redirects.
